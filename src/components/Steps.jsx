@@ -1,0 +1,37 @@
+import tel from '../images/telephone.png';
+import map from '../images/booking.png';
+import wallet from '../images/wallet.png';
+import {BsArrowRight} from 'react-icons/bs';
+
+export default function Steps() {
+    return (
+        <div className="text-center py-14 bg-slate-100 font-QuickSand font-semibold">
+            <div className="tracking-wide py-3">
+                <h1 className="text-3xl md:text-4xl pb-3 font-Karla">HOW IT WORKS</h1>
+                <p className="text-lg md:text-xl">3 simple steps to avail Service</p>
+            </div>
+            <div className='w-100 py-12'>
+                <div className="md:w-9/12 md:mx-auto md:flex md:justify-between space-y-10 md:space-y-0">
+                    <div className="space-y-5 text-center">
+                        <img src={tel} alt="" className='w-24 md:w-20 mx-auto' />
+                        <h1 className='text-lg'>Book Online or Phone</h1>
+                    </div>
+                    <div className="flex items-center">
+                        <BsArrowRight className="text-6xl mx-auto  text-slate-500 font-semibold"/>
+                    </div>
+                    <div className="space-y-5 text-center">
+                        <img src={map} alt="" className='w-24 md:w-20 mx-auto' />
+                        <h1 className='text-lg'>Get Booking Confirmation</h1>
+                    </div>
+                    <div className="flex items-center">
+                        <BsArrowRight className="text-6xl mx-auto  text-slate-500 font-semibold"/>
+                    </div>
+                    <div className="space-y-5 text-center">
+                        <img src={wallet} alt="" className='w-24 md:w-20 mx-auto' />
+                        <h1 className='text-lg'>Pay after Work is Done</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
