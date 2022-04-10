@@ -1,3 +1,11 @@
+*{
+    transition : all 0.7s;
+
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
 
 .companiesimg{
     min-width: 6em;

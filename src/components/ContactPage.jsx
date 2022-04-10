@@ -4,6 +4,7 @@ import { IoMdCall } from 'react-icons/io';
 import { IoMdMail } from 'react-icons/io';
 import { RiCustomerService2Fill } from 'react-icons/ri';
 import emailjs from '@emailjs/browser';
+import {motion} from 'framer-motion';
 
 export default function ContactPage() {
     
@@ -35,7 +36,7 @@ export default function ContactPage() {
         <div className="w-100 font-QuickSand font-bold">
             <div className="w-100 bg-green_gradient">
                 <div className="md:w-8/12 md:mx-auto h-[15vh] flex items-center justify-center md:justify-start">
-                    <h1 className="text-3xl text-green-50">Contact</h1>
+                    <motion.h1 initial={{opacity: 0, y: -3}} whileInView={{opacity: 1, y: 0}} viewport={{once: true}} className="text-3xl text-green-50">Contact</motion.h1>
                 </div>
             </div>
             <div className='md:w-9/12 md:mx-auto py-5 flex flex-col md:flex-row md:space-x-10 space-x-0 '>

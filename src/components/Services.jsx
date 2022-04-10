@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 
 export default function Services() {
 
@@ -8,13 +8,13 @@ export default function Services() {
         <div className="py-16 bg-gradient-to-br from-slate-100 to-slate-200">
             <div className="md:w-9/12 md:mx-auto m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                 <div className="mb-12 space-y-5 text-center">
-                <p className="font-QuickSand tracking-widest leading-loose font-bold text-xl md:text-2xl">Services We Offer</p> 
+                <motion.p initial={{opacity: 0, y: 3}} whileInView={{opacity: 1, y:0}} transition={{ delay: 0.5, type: "spring", stiffness: 100}} viewport={{ once: true }}  className="font-QuickSand tracking-widest leading-loose font-bold text-xl md:text-2xl">Services We Offer</motion.p>
  <h1 className="text-4xl text-slate-800 md:text-4xl pb-3 font-QuickSand font-bold px-10 md:px-0">We Repair</h1></div>
                
              
                 <div className="space-y-10">
                     <div className="grid gap-12 lg:grid-cols-2">
-                        <div className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
+                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.3, type: "tween", stiffness: 100}} viewport={{ once: true }} className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
                             <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F23%2F2021%2F07%2F20%2Fair-conditioner-size-2000.jpg" alt="art cover" loading="lazy" width="1000" height="667" 
                             className="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl hover:scale-105" />
                             <div className="sm:w-7/12 pl-0 p-5">
@@ -26,8 +26,8 @@ export default function Services() {
                                     <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
                                 </div>
                             </div>
-                        </div>
-                        <div className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
+                        </motion.div>
+                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.3, type: "tween", stiffness: 100}} viewport={{ once: true }} className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
                             <img src="https://www.lg.com/in/images/refrigerators/md07529192/gallery/GR-X31FMQHL-Refrigerators-Food-Front-Light-On-D-01.jpg" alt="art cover" loading="lazy" width="1000" height="667" 
                             className="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl hover:scale-105" />
                             <div className="sm:w-7/12 pl-0 p-5">
@@ -39,11 +39,11 @@ export default function Services() {
                                     <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
 
                     <div className="grid gap-12 lg:grid-cols-2">
-                        <div className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
+                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.3, type: "tween", stiffness: 100}} viewport={{ once: true }} className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
                             <img src={img} alt="art cover" loading="lazy" width="1000" height="667" 
                             className="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl hover:scale-105" />
                             <div className="sm:w-7/12 pl-0 p-5">
@@ -55,8 +55,8 @@ export default function Services() {
                                     <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
                                 </div>
                             </div>
-                        </div>
-                        <div className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
+                        </motion.div>
+                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.3, type: "tween", stiffness: 100}} viewport={{ once: true }} className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV0vKkkPvRmwh-59rgXsocyG9QZeJ5fEFFxw&usqp=CAU" alt="art cover" loading="lazy" width="1000" height="667" 
                             className="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl hover:scale-105" />
                             <div className="sm:w-7/12 pl-0 p-5">
@@ -68,7 +68,7 @@ export default function Services() {
                                     <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import { React, useState } from "react";
-import emailjs from '@emailjs/browser';
 import '../App.css';
+import emailjs from '@emailjs/browser';
+import { motion } from "framer-motion";
 
 export default function Main() {
 
@@ -44,10 +45,10 @@ export default function Main() {
                             className="block w-full brightness-[40%] h-[90vh] image"  
                             alt="Wild Landscape"
                         />
-                        <div class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
+                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.5, type: "tween", stiffness: 100}} viewport={{ once: true }} class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
                             <h5 class="text-3xl md:text-4xl tracking-widest leading-tight">NEED HELP WITH HOME SERVICES ?</h5>
                             <p className="text-xl md:text-xl tracking-widest leading-tight ">We connect you with the best Home Service professional in your city.</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="carousel-item float-left w-full ">
                         <img
@@ -56,10 +57,10 @@ export default function Main() {
                             alt="Camera"
                         />
 
-                        <div class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
+                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.5, type: "tween", stiffness: 100}} viewport={{ once: true }} class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
                             <h5 class="text-3xl md:text-4xl tracking-widest leading-tight">NEED HELP WITH HOME SERVICES ?</h5>
                             <p className="text-xl md:text-xl tracking-widest leading-tight">We connect you with the best Home Service professional in your city.</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="carousel-item float-left w-full ">
                         <img
@@ -68,10 +69,10 @@ export default function Main() {
                             alt="Exotic Fruits"
                         />
 
-                        <div class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
+                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.5, type: "tween", stiffness: 100}} viewport={{ once: true }} class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
                             <h5 class="text-3xl md:text-4xl tracking-widest leading-tight">NEED HELP WITH HOME SERVICES ?</h5>
                             <p className="text-xl md:text-xl tracking-widest leading-tight">We connect you with the best Home Service professional in your city.</p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
 

@@ -15,13 +15,13 @@ export default function Header() {
 
     useEffect(() => {
       window.addEventListener("scroll", () => {
-        setScroll(window.scrollY > 2);
+        setScroll(window.scrollY > 0);
       });
     }, []); 
 
     return (
         <div className="w-100 sticky top-0 bg-white drop-shadow-lg shadow-green-400 " >
-            <div className={ (scroll ? "hidden" : " visible ") + " text-white bg-green_gradient font-QuickSand font-bold"}>
+            <div className={ (scroll ? "hidden" : " visible ") + " text-white bg-green_gradient font-QuickSand font-bold transiton-all ease-in"}>
                 <div className="md:w-9/12 md:mx-auto md:flex flex-col md:flex-row md:justify-between text-sm space-y-1 md:space-y-0 md:text-md  text-center px-2 md:px-5 py-2">
                     <h1 className="cursor-pointer flex items-center justify-center" onClick={() => window.location = 'mailto:bhopaltechnician@gmail.com'}>
                    
