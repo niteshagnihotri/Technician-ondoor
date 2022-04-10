@@ -23,7 +23,7 @@ export default function Services() {
                                         <h4 className="text-2xl font-semibold text-cyan-900">Air Conditioner </h4>
                                         <p className="text-gray-600">We are known for our efficient and reliable AC repair and maintenance services. Our costs are economical, and services are second to none. </p>
                                     </div>
-                                    <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
+                                    {/* <a  className="block w-max text-cyan-600">Read more</a> */}
                                 </div>
                             </div>
                         </motion.div>
@@ -36,7 +36,7 @@ export default function Services() {
                                         <h4 className="text-2xl font-semibold text-cyan-900">Refrigerator</h4>
                                         <p className="text-gray-600">Our engineers are highly experienced and certified to handle different refrigerators of different brands.</p>
                                     </div>
-                                    <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
+                                    {/* <a  className="block w-max text-cyan-600">Read more</a> */}
                                 </div>
                             </div>
                         </motion.div>
@@ -52,7 +52,7 @@ export default function Services() {
                                         <h4 className="text-2xl font-semibold text-cyan-900">Washing Machine</h4>
                                         <p className="text-gray-600">We can repair any washing machine of any brand and can troubleshoot a wide range of technical issues. </p>
                                     </div>
-                                    <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
+                                    {/* <a  className="block w-max text-cyan-600">Read more</a> */}
                                 </div>
                             </div>
                         </motion.div>
@@ -65,7 +65,7 @@ export default function Services() {
                                         <h4 className="text-2xl font-semibold text-cyan-900">Water Purifier</h4>
                                         <p className="text-gray-600">If you face any problem related to your water purifiers or it is not working at all or it is unable to heat food, then you can call us. </p>
                                     </div>
-                                    <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
+                                    {/* <a  className="block w-max text-cyan-600">Read more</a> */}
                                 </div>
                             </div>
                         </motion.div>
