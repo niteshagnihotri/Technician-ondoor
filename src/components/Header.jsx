@@ -1,16 +1,18 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import img1 from '../images/TechnicianTr.png';
 import { RiCustomerService2Fill } from 'react-icons/ri';
-// import { GrClose } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
 import {IoMdMail} from 'react-icons/io';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { useNavigate } from "react-router-dom";
 import {GrClose} from 'react-icons/gr';
+import { CityContext } from '../App';
 
 export default function Header() {
     const [scroll, setScroll] = useState(false);
     const [showNav, setshowNav] = useState(false);
+    const {dispatch} = useContext(CityContext);
+
     let history = useNavigate();
 
     useEffect(() => {
@@ -18,6 +20,12 @@ export default function Header() {
         setScroll(window.scrollY > 0);
       });
     }, []); 
+
+    let value;
+    const handleInputs = (e) =>{
+        value = e.target.value;
+        dispatch({type: value})
+    }
 
     return (
         <div className="w-100 sticky top-0 bg-white drop-shadow-lg shadow-green-400 z-50" >
@@ -53,7 +61,7 @@ export default function Header() {
                         </ul>
                     </div>
                     <div className=" w-100 md:w-fit flex md:flex-row md:ml-auto space-x-5 md:space-x-7 font-Raleway align-middle self-center">
-                        <select name="city" className="p-1 bg-white rounded-3xl ml-5 cursor-pointer focus:outline-none shadow-md" defaultValue="Bhopal">
+                        <select name="city" onChange={handleInputs} className="p-1 bg-white rounded-3xl ml-5 cursor-pointer focus:outline-none shadow-md" defaultValue="Bhopal">
                             <option value="Bhopal">Bhopal</option>
                             <option value="Indore">Indore</option>
                             <option value="Jabalpur">Jabalpur</option>

@@ -1,9 +1,12 @@
-import { React, useState } from "react";
+import { React, useState, useContext } from "react";
 import '../App.css';
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
+import { CityContext } from "../App";
 
 export default function Main() {
+
+    const {state} = useContext(CityContext);
 
     const img_url = "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80";
    
@@ -25,7 +28,6 @@ export default function Main() {
    
     const SendData = async (e) => {
         const mailsent = emailjs.send("technicianondoor_mail", "template_86xtlik", user, 'UHgVYyZ054pIrjLcf');
-        console.log(mailsent);
         if(mailsent){
             window.alert("Request submitted");
         }
@@ -83,6 +85,9 @@ export default function Main() {
                     </div>
                     <div className="flex flex-col space-y-4 text-lg">
                         <input type="email" id="" name="email" onChange={handleInputs} className="border-2 p-1 px-2 focus:outline-none" placeholder='Email : ' autoComplete='off'/>
+                    </div>
+                    <div className="flex flex-col space-y-4 text-lg">
+                        <input type="text" id="" value={state} readOnly name="city" onChange={handleInputs} className="border-2 p-1 px-2 focus:outline-none" placeholder='City : ' autoComplete='off'/>
                     </div>
                     <div className="flex flex-col space-y-4 text-lg">
                         <input type="phone" id="" name="phone" onChange={handleInputs} className="border-2 p-1 px-2 focus:outline-none" placeholder='Contact : ' autoComplete='off'/>
