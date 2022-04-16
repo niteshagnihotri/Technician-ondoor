@@ -12,7 +12,7 @@ export default function Services() {
  <h1 className="text-4xl text-slate-800 md:text-4xl pb-3 font-QuickSand font-bold px-10 md:px-0">We Repair</h1></div>
                
              
-                <div className="space-y-10">
+                <div className="space-y-10 mx-5">
                     <div className="grid gap-12 lg:grid-cols-2">
                         <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.3, type: "tween", stiffness: 100}} viewport={{ once: true }} className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
                             <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F23%2F2021%2F07%2F20%2Fair-conditioner-size-2000.jpg" alt="art cover" loading="lazy" width="1000" height="667" 
@@ -23,7 +23,6 @@ export default function Services() {
                                         <h4 className="text-2xl font-semibold text-cyan-900">Air Conditioner </h4>
                                         <p className="text-gray-600">We are known for our efficient and reliable AC repair and maintenance services. Our costs are economical, and services are second to none. </p>
                                     </div>
-                                    {/* <a  className="block w-max text-cyan-600">Read more</a> */}
                                 </div>
                             </div>
                         </motion.div>
@@ -36,7 +35,6 @@ export default function Services() {
                                         <h4 className="text-2xl font-semibold text-cyan-900">Refrigerator</h4>
                                         <p className="text-gray-600">Our engineers are highly experienced and certified to handle different refrigerators of different brands.</p>
                                     </div>
-                                    {/* <a  className="block w-max text-cyan-600">Read more</a> */}
                                 </div>
                             </div>
                         </motion.div>
@@ -52,7 +50,6 @@ export default function Services() {
                                         <h4 className="text-2xl font-semibold text-cyan-900">Washing Machine</h4>
                                         <p className="text-gray-600">We can repair any washing machine of any brand and can troubleshoot a wide range of technical issues. </p>
                                     </div>
-                                    {/* <a  className="block w-max text-cyan-600">Read more</a> */}
                                 </div>
                             </div>
                         </motion.div>
@@ -65,7 +62,6 @@ export default function Services() {
                                         <h4 className="text-2xl font-semibold text-cyan-900">Water Purifier</h4>
                                         <p className="text-gray-600">If you face any problem related to your water purifiers or it is not working at all or it is unable to heat food, then you can call us. </p>
                                     </div>
-                                    {/* <a  className="block w-max text-cyan-600">Read more</a> */}
                                 </div>
                             </div>
                         </motion.div>

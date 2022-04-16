@@ -3,12 +3,13 @@ import '../App.css';
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
 import { CityContext } from "../App";
+import img_url from '../images/bg.avif'; 
 
 export default function Main() {
 
     const {state} = useContext(CityContext);
 
-    const img_url = "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80";
+    // const img_url = "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80";
    
     const [user, setUser] = useState({
         name: "",
@@ -45,9 +46,9 @@ export default function Main() {
                         <img
                             src={img_url}
                             className="block w-full brightness-[40%] h-[90vh] image"  
-                            alt="Wild Landscape"
+                            alt="Technician on door"
                         />
-                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.5, type: "tween", stiffness: 100}} viewport={{ once: true }} class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
+                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.3, type: "tween", stiffness: 100}} viewport={{ once: true }} class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
                             <h5 class="text-3xl md:text-4xl tracking-widest leading-tight">NEED HELP WITH HOME SERVICES ?</h5>
                             <p className="text-xl md:text-xl tracking-widest leading-tight ">We connect you with the best Home Service professional in your city.</p>
                         </motion.div>
@@ -56,10 +57,10 @@ export default function Main() {
                         <img
                             src={img_url}
                             className="block w-full brightness-[40%] h-[90vh] image "
-                            alt="Camera"
+                            alt="Technician on door"
                         />
 
-                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.5, type: "tween", stiffness: 100}} viewport={{ once: true }} class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
+                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.3, type: "tween", stiffness: 100}} viewport={{ once: true }} class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
                             <h5 class="text-3xl md:text-4xl tracking-widest leading-tight">NEED HELP WITH HOME SERVICES ?</h5>
                             <p className="text-xl md:text-xl tracking-widest leading-tight">We connect you with the best Home Service professional in your city.</p>
                         </motion.div>
@@ -68,10 +69,10 @@ export default function Main() {
                         <img
                             src={img_url}
                             className="block w-full brightness-[40%] h-[90vh] image "
-                            alt="Exotic Fruits"
+                            alt="Technician on door"
                         />
 
-                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.5, type: "tween", stiffness: 100}} viewport={{ once: true }} class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
+                        <motion.div initial={{ opacity:0, scale: 0.6 }} whileInView={{ opacity:1, scale: 1 }} transition={{ delay: 0.3, type: "tween", stiffness: 100}} viewport={{ once: true }} class="carousel-caption md:block absolute top-0 right-0 bottom-0 left-0 md:right-auto md:left-64 py-8 md:top-[10%] space-y-5 md:w-[40%] w-100 p-10 px-8 md:p-2">
                             <h5 class="text-3xl md:text-4xl tracking-widest leading-tight">NEED HELP WITH HOME SERVICES ?</h5>
                             <p className="text-xl md:text-xl tracking-widest leading-tight">We connect you with the best Home Service professional in your city.</p>
                         </motion.div>
