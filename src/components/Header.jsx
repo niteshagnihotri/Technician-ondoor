@@ -4,7 +4,6 @@ import { RiCustomerService2Fill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import {IoMdMail} from 'react-icons/io';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
-import { useNavigate } from "react-router-dom";
 import {GrClose} from 'react-icons/gr';
 import { CityContext } from '../App';
 
@@ -12,8 +11,6 @@ export default function Header() {
     const [scroll, setScroll] = useState(false);
     const [showNav, setshowNav] = useState(false);
     const {dispatch} = useContext(CityContext);
-
-    let history = useNavigate();
 
     useEffect(() => {
       window.addEventListener("scroll", () => {
@@ -44,7 +41,8 @@ export default function Header() {
                 <div className="md:w-9/12  md:mx-auto md:flex space-y-4 md:space-y-0 items-center align-middle pb-3 md:pb-0 ">
                 <div className="bg-white md:flex items-center justify-between font-QuickSand">
                         <div className="flex items-center justify-between">
-                           <img className="w-56 p-0 m-0 lg1:ml-5 cursor-pointer" src={img1} onClick={()=>{history('/'); window.scrollTo(0)}} alt="applianceplus - best home appliances repair service in bhopal" />
+                         <Link to="/"> <img className="w-56 p-0 m-0 lg1:ml-5 cursor-pointer" src={img1} onClick={()=>{window.scrollTo(0)}} alt="applianceplus - best home appliances repair service in bhopal" />
+                           </Link>
                             {
                                 showNav ? 
                                 <GrClose onClick={() => { setshowNav(!showNav) }} className='md:hidden block w-10 h-auto p-2 mr-3 cursor-pointer transition-all ease-in-out delay-150'  />
