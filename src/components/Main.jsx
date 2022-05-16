@@ -9,8 +9,6 @@ export default function Main() {
 
     const {state} = useContext(CityContext);
 
-    // const img_url = "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80";
-   
     const [user, setUser] = useState({
         name: "",
         email: "",
