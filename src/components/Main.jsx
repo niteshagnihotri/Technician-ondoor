@@ -127,7 +127,7 @@ export default function Main() {
                         {errorEmail}
                     </div>
                     <div className="flex flex-col h-12 text-lg">
-                        <input type="text" value={state} readOnly name="city" onChange={handleInputs} className="border-slate-600 border-b bg-transparent px-2 placeholder:text-md placeholder:text-slate-500 text-md bg-slate-300 " placeholder='City : ' autoComplete='off' />
+                        <input type="text" value={state} readOnly name="city" onChange={handleInputs} className="border-slate-600 border-b px-2 placeholder:text-md placeholder:text-slate-500 text-md bg-slate-400 text-slate-700" placeholder='City : ' autoComplete='off' />
                     </div>
                     <div className="flex flex-col h-12 text-lg">
                         <input type="phone" name="phone" value={user.phone} onBlur={(e) => { if (e.target.value === "") { setErrorPhone(<p className='text-red-600 text-xs '>please enter contact number</p>) } }} onChange={handleInputs} className="border-slate-600 border-b bg-transparent px-2 placeholder:text-md placeholder:text-slate-500 text-md focus:outline-slate-500" placeholder='Contact : ' autoComplete='off' />
@@ -138,7 +138,7 @@ export default function Main() {
                         {errorMessage}
                     </div>
                     <div>
-                        <button className="w-auto flex items-center shadow-sm shadow-slate-800 bg-slate-700 hover:bg-gray-900  text-md rounded-3xl font-semibold text-slate-200 p-2 px-6"
+                        <button className="w-auto flex items-center shadow-sm shadow-slate-800 bg-slate-700 hover:bg-gray-900 rounded-3xl font-QuickSand text-slate-200 p-2 px-6"
                             onClick={SendData}>
                             <img src={btnloader} alt="btn loader" className={(btnloading ? "visible" : "hidden") + " w-7 h-7 animate-spin mr-2"} loading="lazy" />
                             Submit
