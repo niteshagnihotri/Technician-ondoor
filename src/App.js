@@ -2,7 +2,7 @@ import Routing from './components/Routing';
 import { createContext, useReducer } from 'react';
 
 
-const initialState = "Bhopal";
+const initialState = "Raipur";
 export const CityContext = createContext();
 
 function reducer(state, action) {

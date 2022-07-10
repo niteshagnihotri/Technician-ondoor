@@ -44,11 +44,13 @@ export default function Header() {
                         </div>
                         <div className=" w-100 md:w-fit flex md:flex-row md:ml-auto space-x-5 md:space-x-7 font-Raleway align-middle self-center">
                             <select name="city" onChange={handleInputs} className="p-1 bg-white rounded-3xl ml-5 cursor-pointer focus:outline-none shadow-md" defaultValue="Bhopal">
-                                <option value="Bhopal">Bhopal</option>
+                                
+                            <option value="Raipur">Raipur</option>
+                            {/* <option value="Bhopal">Bhopal</option>
                                 <option value="Indore">Indore</option>
                                 <option value="Jabalpur">Jabalpur</option>
                                 <option value="Raipur">Raipur</option>
-                                <option value="Gorakhpur">Gorakhpur</option>
+                                <option value="Gorakhpur">Gorakhpur</option> */}
                             </select>
                             <button className='bg-button_gradient p-1 px-3 flex shadow-lg text-white rounded hover:opacity-90' onClick={() => window.location = 'tel:+919343210457'}>Avail Service <RiCustomerService2Fill style={{ alignSelf: 'center', margin: '0 6' }} /></button>
                         </div>
